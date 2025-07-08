@@ -1,2 +1,2 @@
-# get-that-movie
-Assignment done for Internship Qualification
+# get-that-movie / Movie Recommendation System
+
