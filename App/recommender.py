@@ -16,7 +16,7 @@ def get_recommendations(movie_watched, n = 5):
     data['genres'] = data['genres'].str.split('|')
 
     #This is pretty much similar to One Hot Encoder
-    encoded_genre = encoder.fit_transform(data['genre'])
+    encoded_genre = encoder.fit_transform(data['genres'])
 
     #Dataframe of all genres
     df_genre = pd.DataFrame(encoded_genre, columns = encoder.classes_, index = data.index)
