@@ -1,7 +1,5 @@
 #imports
 import pandas as pd
-import warnings
-warnings.filterwarnings('ignore')
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
