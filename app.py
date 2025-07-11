@@ -5,5 +5,5 @@ movie = st.text_input('Enter a movie name: ')
 if movie:
     recommendations = get_recommendations(movie)
     st.write(f"Five Movies Similar to '{movie}' are :/n")
-    for movie in recommendations:
-        st.write('- ', movie)
+    for rec in recommendations:
+        st.write('- ', rec)
