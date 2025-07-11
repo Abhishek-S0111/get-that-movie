@@ -13,7 +13,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/get-that-movie.git
+    git clone https://github.com/Abhishek-S0111/get-that-movie.git
     cd get-that-movie
     ```
 2. Install dependencies:
