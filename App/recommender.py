@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def get_recommendations(movie_watched, n = 5):
     #load the dataset
-    data = pd.read_csv('../data/movie.csv')
+    data = pd.read_csv('data/movie.csv')
 
     #initialise the encoder
     encoder = MultiLabelBinarizer()
