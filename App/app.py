@@ -14,7 +14,7 @@ movie_list = sorted(data['title'].tolist())
 movie = st.selectbox("Choose a movie : ", movie_list)
 
 if movie:
-    st.write("Hullo!!!")
+    st.write("You might also like!!!")
     st.write(f"Five Movies Similar to '{movie}' are :\n")
     movie_id = data[data['title'] == movie].index[0]
     similar_id = map[str(movie_id)]
