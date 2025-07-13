@@ -14,9 +14,10 @@ data = read_csv("data/movie.csv")
 
 if movie:
     st.write("Hullo!!!")
-    st.write(f"Five Movies Similar to '{movie}' are :/n")
+    st.write(f"Five Movies Similar to '{movie}' are :\n")
     movie_id = data[data['title'] == movie].index[0]
     similar_id = map[str(movie_id)]
     recommendations = data.iloc[similar_id]['title'].tolist()
-    for rec in recommendations:
-        st.write('- ', rec)
+
+    for i in range(1,6):
+        st.write('- ', recommendations[i])
