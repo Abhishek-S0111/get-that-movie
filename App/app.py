@@ -3,14 +3,15 @@ import streamlit as st
 import json
 from pandas import read_csv
 
-movie = st.text_input('Enter a movie name: ')
-
 #load the precompute file
 with open("precompute/movie_sims_dict.json", 'r') as f:
     map = json.load(f)
 
 #load the movie dataset
 data = read_csv("data/movie.csv")
+
+movie_list = sorted(data['title'].tolist())
+movie = st.selectbox("Choose a movie : ", movie_list)
 
 if movie:
     st.write("Hullo!!!")
